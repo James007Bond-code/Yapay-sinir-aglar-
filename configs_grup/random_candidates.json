@@ -1,0 +1,113 @@
+[
+    {
+        "config_id": "R1",
+        "search_type": "random",
+        "optimizer": "SGD",
+        "hidden_layers": [
+            128,
+            64
+        ],
+        "activation": "ReLU",
+        "lr": 0.05295,
+        "weight_decay": 0.0001,
+        "batch_size": 32,
+        "scaler": "MinMaxScaler",
+        "dropout": 0.0,
+        "use_scheduler": true,
+        "clip_outliers": false,
+        "unknown_strategy": "most_frequent",
+        "purpose": "Random Search adayı"
+    },
+    {
+        "config_id": "R2",
+        "search_type": "random",
+        "optimizer": "SGD",
+        "hidden_layers": [
+            32
+        ],
+        "activation": "ReLU",
+        "lr": 0.0226,
+        "weight_decay": 0.0001,
+        "batch_size": 32,
+        "scaler": "StandardScaler",
+        "dropout": 0.2,
+        "use_scheduler": true,
+        "clip_outliers": true,
+        "unknown_strategy": "most_frequent",
+        "purpose": "Random Search adayı"
+    },
+    {
+        "config_id": "R3",
+        "search_type": "random",
+        "optimizer": "Adam",
+        "hidden_layers": [
+            32
+        ],
+        "activation": "tanh",
+        "lr": 0.000823,
+        "weight_decay": 0.0,
+        "batch_size": 64,
+        "scaler": "RobustScaler",
+        "dropout": 0.0,
+        "use_scheduler": true,
+        "clip_outliers": false,
+        "unknown_strategy": "keep_category",
+        "purpose": "Random Search adayı"
+    },
+    {
+        "config_id": "R4",
+        "search_type": "random",
+        "optimizer": "Adam",
+        "hidden_layers": [
+            128,
+            64
+        ],
+        "activation": "tanh",
+        "lr": 0.000119,
+        "weight_decay": 0.0,
+        "batch_size": 32,
+        "scaler": "StandardScaler",
+        "dropout": 0.2,
+        "use_scheduler": true,
+        "clip_outliers": true,
+        "unknown_strategy": "most_frequent",
+        "purpose": "Random Search adayı"
+    },
+    {
+        "config_id": "R5",
+        "search_type": "random",
+        "optimizer": "AdamW",
+        "hidden_layers": [
+            128,
+            64
+        ],
+        "activation": "ReLU",
+        "lr": 0.001017,
+        "weight_decay": 0.0001,
+        "batch_size": 128,
+        "scaler": "RobustScaler",
+        "dropout": 0.0,
+        "use_scheduler": true,
+        "clip_outliers": true,
+        "unknown_strategy": "most_frequent",
+        "purpose": "Random Search adayı"
+    },
+    {
+        "config_id": "R6",
+        "search_type": "random",
+        "optimizer": "AdamW",
+        "hidden_layers": [
+            64
+        ],
+        "activation": "tanh",
+        "lr": 0.000593,
+        "weight_decay": 0.0001,
+        "batch_size": 32,
+        "scaler": "MinMaxScaler",
+        "dropout": 0.0,
+        "use_scheduler": true,
+        "clip_outliers": true,
+        "unknown_strategy": "keep_category",
+        "purpose": "Random Search adayı"
+    }
+]

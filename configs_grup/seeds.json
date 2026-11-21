@@ -1,0 +1,17 @@
+{
+    "student_last5": 12022,
+    "base_seed": 14048,
+    "split_seed": 14049,
+    "outer_cv_seed": 14050,
+    "inner_cv_seed": 14051,
+    "random_search_seed": 14052,
+    "early_stop_seed": 14053,
+    "bootstrap_seed": 14054,
+    "logreg_seed": 14055,
+    "model_init_seeds": [
+        14058,
+        14068,
+        14078
+    ],
+    "derivation": "base = last5 + 2026; split=+1, outer=+2, inner=+3(+k), random_search=+4, early_stop=+5, bootstrap=+6, logreg=+7, model_init=+10/+20/+30"
+}

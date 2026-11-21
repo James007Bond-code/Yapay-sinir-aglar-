@@ -1,0 +1,111 @@
+[
+    {
+        "config_id": "M1",
+        "search_type": "manual",
+        "optimizer": "AdamW",
+        "hidden_layers": [
+            32
+        ],
+        "lr": 0.001,
+        "scaler": "StandardScaler",
+        "use_scheduler": true,
+        "activation": "ReLU",
+        "batch_size": 64,
+        "dropout": 0.0,
+        "weight_decay": 0.0001,
+        "clip_outliers": false,
+        "unknown_strategy": "keep_category",
+        "purpose": "Temel manuel konfigürasyon"
+    },
+    {
+        "config_id": "M2",
+        "search_type": "manual",
+        "optimizer": "Adam",
+        "hidden_layers": [
+            32
+        ],
+        "lr": 0.001,
+        "scaler": "StandardScaler",
+        "use_scheduler": true,
+        "activation": "ReLU",
+        "batch_size": 64,
+        "dropout": 0.0,
+        "weight_decay": 0.0001,
+        "clip_outliers": false,
+        "unknown_strategy": "keep_category",
+        "purpose": "Optimizer etkisi (AdamW → Adam)"
+    },
+    {
+        "config_id": "M3",
+        "search_type": "manual",
+        "optimizer": "SGD",
+        "hidden_layers": [
+            32
+        ],
+        "lr": 0.001,
+        "scaler": "StandardScaler",
+        "use_scheduler": true,
+        "activation": "ReLU",
+        "batch_size": 64,
+        "dropout": 0.0,
+        "weight_decay": 0.0001,
+        "clip_outliers": false,
+        "unknown_strategy": "keep_category",
+        "purpose": "Optimizer etkisi (AdamW → SGD+Momentum 0.9)"
+    },
+    {
+        "config_id": "M4",
+        "search_type": "manual",
+        "optimizer": "AdamW",
+        "hidden_layers": [
+            32
+        ],
+        "lr": 0.001,
+        "scaler": "MinMaxScaler",
+        "use_scheduler": true,
+        "activation": "ReLU",
+        "batch_size": 64,
+        "dropout": 0.0,
+        "weight_decay": 0.0001,
+        "clip_outliers": false,
+        "unknown_strategy": "keep_category",
+        "purpose": "Ölçekleme etkisi (Standard → MinMax)"
+    },
+    {
+        "config_id": "M5",
+        "search_type": "manual",
+        "optimizer": "AdamW",
+        "hidden_layers": [
+            64,
+            32
+        ],
+        "lr": 0.001,
+        "scaler": "StandardScaler",
+        "use_scheduler": true,
+        "activation": "ReLU",
+        "batch_size": 64,
+        "dropout": 0.0,
+        "weight_decay": 0.0001,
+        "clip_outliers": false,
+        "unknown_strategy": "keep_category",
+        "purpose": "Mimari etkisi ((32,) → (64,32))"
+    },
+    {
+        "config_id": "M6",
+        "search_type": "manual",
+        "optimizer": "AdamW",
+        "hidden_layers": [
+            32
+        ],
+        "lr": 0.001,
+        "scaler": "StandardScaler",
+        "use_scheduler": false,
+        "activation": "ReLU",
+        "batch_size": 64,
+        "dropout": 0.0,
+        "weight_decay": 0.0001,
+        "clip_outliers": false,
+        "unknown_strategy": "keep_category",
+        "purpose": "LR scheduler etkisi (scheduler kapalı)"
+    }
+]

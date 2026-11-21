@@ -1,0 +1,151 @@
+{
+    "numeric_columns": [
+        "age",
+        "campaign",
+        "pdays",
+        "previous",
+        "emp.var.rate",
+        "cons.price.idx",
+        "cons.conf.idx",
+        "euribor3m",
+        "nr.employed",
+        "prev_contacted"
+    ],
+    "imputer_median": {
+        "age": 38.0,
+        "campaign": 2.0,
+        "pdays": 0.0,
+        "previous": 0.0,
+        "emp.var.rate": 1.1,
+        "cons.price.idx": 93.444,
+        "cons.conf.idx": -41.8,
+        "euribor3m": 4.857,
+        "nr.employed": 5191.0,
+        "prev_contacted": 0.0
+    },
+    "clip_enabled": false,
+    "clip_lower": {
+        "age": null,
+        "campaign": null,
+        "pdays": null,
+        "previous": null,
+        "emp.var.rate": null,
+        "cons.price.idx": null,
+        "cons.conf.idx": null,
+        "euribor3m": null,
+        "nr.employed": null,
+        "prev_contacted": null
+    },
+    "clip_upper": {
+        "age": null,
+        "campaign": null,
+        "pdays": null,
+        "previous": null,
+        "emp.var.rate": null,
+        "cons.price.idx": null,
+        "cons.conf.idx": null,
+        "euribor3m": null,
+        "nr.employed": null,
+        "prev_contacted": null
+    },
+    "scaler": "StandardScaler",
+    "scaler_mean": {
+        "age": 40.301779359430604,
+        "campaign": 2.4572953736654806,
+        "pdays": 0.21494661921708186,
+        "previous": 0.18647686832740212,
+        "emp.var.rate": 0.06494661921708184,
+        "cons.price.idx": 93.57210996441282,
+        "cons.conf.idx": -40.5414946619217,
+        "euribor3m": 3.5923227758007115,
+        "nr.employed": 5165.4684341637,
+        "prev_contacted": 0.03665480427046263
+    },
+    "scaler_scale": {
+        "age": 10.346317981111174,
+        "campaign": 2.42491335610997,
+        "pdays": 1.3490700951787689,
+        "previous": 0.5249253873421571,
+        "emp.var.rate": 1.568844491928731,
+        "cons.price.idx": 0.5822068938678584,
+        "cons.conf.idx": 4.647252344086303,
+        "euribor3m": 1.7452321694700532,
+        "nr.employed": 74.30235094471205,
+        "prev_contacted": 0.18791282445420457
+    },
+    "onehot_categories": {
+        "job": [
+            "admin.",
+            "blue-collar",
+            "entrepreneur",
+            "housemaid",
+            "management",
+            "retired",
+            "self-employed",
+            "services",
+            "student",
+            "technician",
+            "unemployed",
+            "unknown"
+        ],
+        "marital": [
+            "divorced",
+            "married",
+            "single",
+            "unknown"
+        ],
+        "education": [
+            "basic.4y",
+            "basic.6y",
+            "basic.9y",
+            "high.school",
+            "illiterate",
+            "professional.course",
+            "university.degree",
+            "unknown"
+        ],
+        "default": [
+            "no",
+            "unknown"
+        ],
+        "housing": [
+            "no",
+            "unknown",
+            "yes"
+        ],
+        "loan": [
+            "no",
+            "unknown",
+            "yes"
+        ],
+        "contact": [
+            "cellular",
+            "telephone"
+        ],
+        "month": [
+            "apr",
+            "aug",
+            "dec",
+            "jul",
+            "jun",
+            "mar",
+            "may",
+            "nov",
+            "oct",
+            "sep"
+        ],
+        "day_of_week": [
+            "fri",
+            "mon",
+            "thu",
+            "tue",
+            "wed"
+        ],
+        "poutcome": [
+            "failure",
+            "nonexistent",
+            "success"
+        ]
+    },
+    "n_output_features": 62
+}

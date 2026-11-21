@@ -1,0 +1,33 @@
+{
+  "project_type": "grup",
+  "authors": [
+    {
+      "name": "Süleyman Balsak",
+      "student_id": "254312022"
+    },
+    {
+      "name": "Seda Erten",
+      "student_id": "254312008"
+    },
+    {
+      "name": "İlkin Urcan",
+      "student_id": "244329078"
+    },
+    {
+      "name": "Aslıhan Semiz Varlı",
+      "student_id": "254329024"
+    }
+  ],
+  "course": "Yapay Sinir Ağları – Yüksek Lisans Ara Sınav Projesi",
+  "instructor": "Gökalp Tulum",
+  "seed_owner": "Süleyman Balsak",
+  "student_id_last5": "12022",
+  "seed_note": "Grup kararıyla temel seed Süleyman Balsak'ın öğrenci numarasından (254312022 → 12022 + 2026 = 14048) türetilmiştir. Dört yöntemin tamamı bu tek seed ve aynı bölünmeyle yürütülmüştür.",
+  "experiment_history_note": "Grup daha önce farklı bir kod tabanıyla ve farklı bir seed'le (34104) aynı veri seti üzerinde bir deneme yapmıştır. Bu sürüm yeni seed (14048) ile yeni bir dev/test bölünmesi kullanır ve tüm kararlar yalnızca development verisiyle alınmıştır. Ancak veri seti aynı olduğundan yeni test kümesindeki satırların bir kısmı önceki denemede test olarak değerlendirilmiş olabilir; bu nedenle test sonuçları tam anlamıyla kör kabul edilmemelidir.",
+  "method_owners": {
+    "A": "Süleyman Balsak",
+    "B": "Seda Erten",
+    "C": "İlkin Urcan",
+    "D": "Aslıhan Semiz Varlı"
+  }
+}

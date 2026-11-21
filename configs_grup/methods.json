@@ -1,0 +1,44 @@
+{
+    "A": {
+        "name": "Standart (yönerge akışı)",
+        "override": {},
+        "threshold_mode": "fixed",
+        "training_from": "A",
+        "how": "Adaylar yönergede tanımlandığı gibi eğitilir: ağırlıksız BCE, `unknown` ayrı kategori, M1–M6'da kırpma yok, `pdays = 999` → `prev_contacted` göstergesi + 0. Karar eşiği 0.50.",
+        "hypothesis": "Yönergenin temel akışı, diğer yöntemlerin karşılaştırılacağı referans performansı verir.",
+        "owner": "Süleyman Balsak"
+    },
+    "B": {
+        "name": "Sınıf ağırlıklı kayıp",
+        "override": {
+            "pos_weight": "auto"
+        },
+        "threshold_mode": "fixed",
+        "training_from": "B",
+        "how": "Her eğitimde eğitim kaybı `BCEWithLogitsLoss(pos_weight = neg/pos)` olur. Oran, o eğitimin fit alt kümesinden hesaplanır (kat-içi, sızıntısız). Early stopping ve scheduler ağırlıksız BCE'yi izler. Eşik 0.50.",
+        "hypothesis": "Azınlık sınıfa daha fazla ağırlık vermek 0.50 eşiğinde Sensitivity'yi belirgin artırır, sıralama metriği AP'yi az değiştirir, olasılık kalibrasyonunu (Brier) bozar.",
+        "owner": "Seda Erten"
+    },
+    "C": {
+        "name": "İç CV'de seçilen karar eşiği",
+        "override": {},
+        "threshold_mode": "inner_oof_f1",
+        "training_from": "A",
+        "how": "Model eğitimi ve aday seçimi Yöntem A ile aynıdır (aynı ağırlıklar). Fark karar kuralındadır: seçilen adayın iç CV out-of-fold tahminlerinde F1'i en yüksek yapan eşik seçilir ve dış değerlendirme ile testte bu eşik kullanılır. Eşik hiçbir zaman değerlendirme/test verisiyle seçilmez.",
+        "hypothesis": "Dengesiz veride 0.50 eşiği gereğinden yüksektir. İç CV ile seçilen eşik AP'yi değiştirmeden F1, Sensitivity ve Balanced Accuracy'yi artırır.",
+        "owner": "İlkin Urcan"
+    },
+    "D": {
+        "name": "Alternatif ön işleme",
+        "override": {
+            "unknown_strategy": "most_frequent",
+            "clip_outliers": true,
+            "pdays_mode": "raw"
+        },
+        "threshold_mode": "fixed",
+        "training_from": "D",
+        "how": "Tüm adaylarda `unknown` kategorileri kat-içi en sık sınıfla doldurulur, sayısal değişkenler eğitim katında öğrenilen P1–P99 sınırlarıyla kırpılır, `pdays` ham kodlamasıyla (999 dahil) kullanılır ve `prev_contacted` göstergesi eklenmez. Diğer her şey A ile aynıdır. Eşik 0.50.",
+        "hypothesis": "`unknown`'ı bilgi taşıyan ayrı bir kategori olarak tutmak ve `pdays` özel kodunu ayrı göstermek bilgi kaybını önler. Bu yüzden D'nin AP'si A'dan eşit veya düşük olur.",
+        "owner": "Aslıhan Semiz Varlı"
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "max_epochs": 150,
+    "early_stopping": {
+        "monitor": "internal_val_BCE",
+        "mode": "min",
+        "patience": 15,
+        "min_delta": 1e-06,
+        "restore_best_weights": true
+    },
+    "early_stop_subset": {
+        "fraction_of_training_part": 0.15,
+        "stratified": true
+    },
+    "lr_scheduler": {
+        "name": "ReduceLROnPlateau",
+        "mode": "min",
+        "factor": 0.5,
+        "patience": 5,
+        "min_lr": 1e-05,
+        "monitor": "internal_val_BCE"
+    },
+    "loss": "BCEWithLogitsLoss (tek logit çıkış, olasılık = sigmoid(logit))",
+    "selection_metric": "average_precision_score (inner CV ortalama AP)",
+    "threshold": 0.5,
+    "sgd_momentum": 0.9,
+    "clip_quantiles": [
+        0.01,
+        0.99
+    ],
+    "device": "cpu"
+}
