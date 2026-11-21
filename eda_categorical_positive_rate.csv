@@ -1,0 +1,19 @@
+Özellik,Kategori,n,Pozitif oranı %
+poutcome,failure,354,15.82
+poutcome,nonexistent,2842,8.27
+poutcome,success,107,66.36
+contact,cellular,2148,13.87
+contact,telephone,1155,5.54
+month,apr,187,16.58
+month,aug,521,10.36
+month,dec,17,58.82
+month,jul,578,7.61
+month,jun,425,13.18
+month,mar,40,55.0
+month,may,1082,6.56
+month,nov,343,9.33
+month,oct,61,37.7
+month,sep,49,38.78
+default,no,2661,12.18
+default,unknown,641,5.93
+default,yes,1,0.0

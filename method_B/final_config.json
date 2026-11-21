@@ -1,0 +1,40 @@
+{
+    "method": "B",
+    "method_name": "Sınıf ağırlıklı kayıp",
+    "config": {
+        "config_id": "M4",
+        "search_type": "manual",
+        "optimizer": "AdamW",
+        "hidden_layers": [
+            32
+        ],
+        "lr": 0.001,
+        "scaler": "MinMaxScaler",
+        "use_scheduler": true,
+        "activation": "ReLU",
+        "batch_size": 64,
+        "dropout": 0.0,
+        "weight_decay": 0.0001,
+        "clip_outliers": false,
+        "unknown_strategy": "keep_category",
+        "purpose": "Ölçekleme etkisi (Standard → MinMax)",
+        "pos_weight": "auto"
+    },
+    "config_id": "M4",
+    "selected_search": "manual_search",
+    "full_dev_mean_AP": 0.4248664366903654,
+    "full_dev_sd_AP": 0.03674683209361123,
+    "best_manual": {
+        "config_id": "M4",
+        "mean_AP": 0.4248664366903654,
+        "sd_AP": 0.03674683209361123
+    },
+    "best_random": {
+        "config_id": "R6",
+        "mean_AP": 0.41671586725771387,
+        "sd_AP": 0.035790424481047974
+    },
+    "threshold": 0.5,
+    "threshold_mode": "fixed",
+    "training_from": "B"
+}

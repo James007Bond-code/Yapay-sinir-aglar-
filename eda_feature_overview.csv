@@ -1,0 +1,20 @@
+Özellik,Tür,dtype,Benzersiz,NaN,unknown,unknown %,Özel kod (pdays=999)
+age,sayısal,int64,66,0,0,0.0,0
+job,kategorik,object,12,0,25,0.76,0
+marital,kategorik,object,4,0,11,0.33,0
+education,kategorik,object,8,0,134,4.06,0
+default,kategorik,object,3,0,641,19.41,0
+housing,kategorik,object,3,0,84,2.54,0
+loan,kategorik,object,3,0,84,2.54,0
+contact,kategorik,object,2,0,0,0.0,0
+month,kategorik,object,10,0,0,0.0,0
+day_of_week,kategorik,object,5,0,0,0.0,0
+campaign,sayısal,int64,24,0,0,0.0,0
+pdays,sayısal,int64,21,0,0,0.0,3184
+previous,sayısal,int64,7,0,0,0.0,0
+poutcome,kategorik,object,3,0,0,0.0,0
+emp.var.rate,sayısal,float64,9,0,0,0.0,0
+cons.price.idx,sayısal,float64,25,0,0,0.0,0
+cons.conf.idx,sayısal,float64,25,0,0,0.0,0
+euribor3m,sayısal,float64,216,0,0,0.0,0
+nr.employed,sayısal,float64,10,0,0,0.0,0

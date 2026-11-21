@@ -1,0 +1,7 @@
+Kontrol,Sayı
+Ham veride (duration dahil) tam kopya satır,0
+duration çıkarıldıktan sonra kopya (özellikler + y),19
+Yalnızca özellikler bazında kopya,20
+Kopya grubuna ait toplam satır,40
+"Etiketi çelişen (aynı X, farklı y) satır",2
+Hem dev hem test'e düşen kopya grubu (grup-duyarlı bölünme sonrası),0

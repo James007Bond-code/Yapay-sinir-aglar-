@@ -1,0 +1,40 @@
+{
+    "method": "D",
+    "method_name": "Alternatif ön işleme",
+    "config": {
+        "config_id": "R6",
+        "search_type": "random",
+        "optimizer": "AdamW",
+        "hidden_layers": [
+            64
+        ],
+        "activation": "tanh",
+        "lr": 0.000593,
+        "weight_decay": 0.0001,
+        "batch_size": 32,
+        "scaler": "MinMaxScaler",
+        "dropout": 0.0,
+        "use_scheduler": true,
+        "clip_outliers": true,
+        "unknown_strategy": "most_frequent",
+        "purpose": "Random Search adayı",
+        "pdays_mode": "raw"
+    },
+    "config_id": "R6",
+    "selected_search": "random_search",
+    "full_dev_mean_AP": 0.42625804879872947,
+    "full_dev_sd_AP": 0.027296440762505633,
+    "best_manual": {
+        "config_id": "M4",
+        "mean_AP": 0.42441696216613517,
+        "sd_AP": 0.022538320080200236
+    },
+    "best_random": {
+        "config_id": "R6",
+        "mean_AP": 0.42625804879872947,
+        "sd_AP": 0.027296440762505633
+    },
+    "threshold": 0.5,
+    "threshold_mode": "fixed",
+    "training_from": "D"
+}

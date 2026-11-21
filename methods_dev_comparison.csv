@@ -1,0 +1,5 @@
+Yöntem,Üye,Ad,Nihai aday,Arama,İç CV AP,SD,Eşik,Birincil
+A,Süleyman Balsak,Standart (yönerge akışı),M5,manual_search,0.42785794090973495,0.028348385185519208,0.5,✓
+B,Seda Erten,Sınıf ağırlıklı kayıp,M4,manual_search,0.4248664366903654,0.03674683209361123,0.5,
+C,İlkin Urcan,İç CV'de seçilen karar eşiği,M5,manual_search,0.42785794090973495,0.028348385185519208,0.1538148820400238,
+D,Aslıhan Semiz Varlı,Alternatif ön işleme,R6,random_search,0.42625804879872947,0.027296440762505633,0.5,

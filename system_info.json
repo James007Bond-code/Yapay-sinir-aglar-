@@ -1,0 +1,16 @@
+{
+    "os": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "cpu_count": 2,
+    "python_version": "3.13.18",
+    "torch_version": "2.14.1+cpu",
+    "sklearn_version": "1.6.1",
+    "numpy_version": "2.4.6",
+    "pandas_version": "2.2.3",
+    "matplotlib_version": "3.10.0",
+    "seaborn_version": "0.13.2",
+    "training_device": "cpu",
+    "cuda_available": false,
+    "gpu_name": "None",
+    "environment": "Google Colab"
+}

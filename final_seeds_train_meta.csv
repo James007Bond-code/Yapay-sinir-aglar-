@@ -1,0 +1,13 @@
+method,seed,role,config_id,threshold,best_epoch,stopped_epoch,n_params,input_dim,pos_weight_used,elapsed_sec,status,warnings,reused_from
+A,14058,primary,M5,0.5,3,18,6145,62,1.0,12.33,early_stopped,,
+A,14068,stability,M5,0.5,4,19,6145,62,1.0,0.98,early_stopped,,
+A,14078,stability,M5,0.5,4,19,6145,62,1.0,0.98,early_stopped,,
+B,14058,primary,M4,0.5,8,23,2049,62,8.123376623376624,0.94,early_stopped,,
+B,14068,stability,M4,0.5,12,27,2049,62,8.123376623376624,1.11,early_stopped,,
+B,14078,stability,M4,0.5,10,25,2049,62,8.123376623376624,1.03,early_stopped,,
+C,14058,primary,M5,0.1538148820400238,3,18,6145,62,1.0,12.33,early_stopped,,A
+C,14068,stability,M5,0.1538148820400238,4,19,6145,62,1.0,0.98,early_stopped,,A
+C,14078,stability,M5,0.1538148820400238,4,19,6145,62,1.0,0.98,early_stopped,,A
+D,14058,primary,R6,0.5,9,24,3649,55,1.0,2.67,early_stopped,,
+D,14068,stability,R6,0.5,7,22,3649,55,1.0,2.69,early_stopped,,
+D,14078,stability,R6,0.5,8,23,3649,55,1.0,2.47,early_stopped,,

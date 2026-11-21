@@ -1,0 +1,4 @@
+Küme,n,Pozitif (y=1),Negatif (y=0),Pozitif oranı %,Seed
+Tüm veri,4119,451,3668,10.95,14049
+Development (%80),3303,362,2941,10.96,14049
+Independent Test (%20),816,89,727,10.91,14049

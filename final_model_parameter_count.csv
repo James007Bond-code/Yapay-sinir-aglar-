@@ -1,0 +1,4 @@
+Katman,Girdi,Çıktı,Ağırlık,Bias,Toplam
+Linear 1,62,64,3968,64,4032
+Linear 2,64,32,2048,32,2080
+Linear 3,32,1,32,1,33

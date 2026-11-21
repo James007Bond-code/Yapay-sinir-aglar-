@@ -1,0 +1,7 @@
+method,outer_fold,search,selected_config,inner_mean_AP,threshold
+A,1,manual,M1,0.44049767466287615,0.5
+A,1,random,R1,0.4303977005034629,0.5
+A,2,manual,M1,0.43068869068244836,0.5
+A,2,random,R3,0.4386172034805173,0.5
+A,3,manual,M2,0.4089347233889944,0.5
+A,3,random,R2,0.3952164591973624,0.5

@@ -1,0 +1,5 @@
+group,n,ort_olasilik,yas_medyan,campaign_medyan,euribor3m_medyan,onceki_temas_pct,poutcome_success_pct,cellular_pct
+TP,25,0.607,40.0,1.0,0.782,100.0,80.0,100.0
+FN,64,0.16,37.0,2.0,1.453,1.562,1.562,81.25
+FP,10,0.602,37.0,1.5,0.894,100.0,90.0,90.0
+TN,717,0.087,38.0,2.0,4.857,0.697,0.697,58.298
