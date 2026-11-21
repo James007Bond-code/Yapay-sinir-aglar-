@@ -9,12 +9,15 @@ UCI Bank Marketing, yalnızca `bank-additional.csv` (4.119 gözlem). Moro, Rita 
 Ham veri repoya eklenmez; `grup01_eda.ipynb` resmî bağlantıdan indirir. `duration` tüm modellerden çıkarılmıştır.
 
 ## Çalıştırma (Google Colab)
-Defterlerin ilk hücresindeki `GITHUB_REPO_URL` bu repoyu gösterir; Colab repoyu Drive'a klonlar.
+Her defter ortak kodu (`src_grup/`) ve proje ayarlarını kendi içinde taşır; ayrıca dosya yüklemek gerekmez. Defteri Colab'da açıp **Tümünü çalıştır** demek yeterlidir. Çıktılar Drive'da `MyDrive/YSA_Grup_Projesi/` altına yazılır. `bank-additional.csv` önce Drive'da aranır, bulunamazsa resmî UCI bağlantısından indirilir.
 1. `grup01_eda.ipynb` – seed'ler, indirme, kopya grupları, %80/%20 bölünme, development-only EDA, hipotezler
 2. `grup02_nested_cv.ipynb` – her üyenin yöntemi (A–D) için 3×3 nested CV ve tam-dev seçimi; birincil yöntem kuralı
 3. `grup03_final_test.ipynb` – Bölüm A: 4 yöntem × 3 seed, kilitli tahmin → *ayrı commit* → Bölüm B: test, GA, şekiller, rapor taslağı
 
 Ortak kod: `src_grup/ysa_utils.py`, yöntemler: `src_grup/group_methods.py`.
+
+## Rapor
+Teknik rapor: [`report.pdf`](report.pdf) (kaynak: `report.md`).
 
 ## Dört yöntem
 | Yöntem | Üye | Ad | Nasıl | Nihai aday | Eşik |
