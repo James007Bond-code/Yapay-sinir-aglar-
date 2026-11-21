@@ -1,0 +1,172 @@
+{
+    "primary_method": "A",
+    "primary_rule": "tam development iç CV mean AP en yüksek (eşitlikte düşük SD, sonra A→B→C→D); dış CV/test kullanılmadı",
+    "threshold_default": 0.5,
+    "methods": {
+        "A": {
+            "method": "A",
+            "method_name": "Standart (yönerge akışı)",
+            "config": {
+                "config_id": "M5",
+                "search_type": "manual",
+                "optimizer": "AdamW",
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "lr": 0.001,
+                "scaler": "StandardScaler",
+                "use_scheduler": true,
+                "activation": "ReLU",
+                "batch_size": 64,
+                "dropout": 0.0,
+                "weight_decay": 0.0001,
+                "clip_outliers": false,
+                "unknown_strategy": "keep_category",
+                "purpose": "Mimari etkisi ((32,) → (64,32))"
+            },
+            "config_id": "M5",
+            "selected_search": "manual_search",
+            "full_dev_mean_AP": 0.42785794090973495,
+            "full_dev_sd_AP": 0.028348385185519208,
+            "best_manual": {
+                "config_id": "M5",
+                "mean_AP": 0.42785794090973495,
+                "sd_AP": 0.028348385185519208
+            },
+            "best_random": {
+                "config_id": "R6",
+                "mean_AP": 0.4206694764992682,
+                "sd_AP": 0.027877995007946535
+            },
+            "threshold": 0.5,
+            "threshold_mode": "fixed",
+            "training_from": "A",
+            "owner": "Süleyman Balsak"
+        },
+        "B": {
+            "method": "B",
+            "method_name": "Sınıf ağırlıklı kayıp",
+            "config": {
+                "config_id": "M4",
+                "search_type": "manual",
+                "optimizer": "AdamW",
+                "hidden_layers": [
+                    32
+                ],
+                "lr": 0.001,
+                "scaler": "MinMaxScaler",
+                "use_scheduler": true,
+                "activation": "ReLU",
+                "batch_size": 64,
+                "dropout": 0.0,
+                "weight_decay": 0.0001,
+                "clip_outliers": false,
+                "unknown_strategy": "keep_category",
+                "purpose": "Ölçekleme etkisi (Standard → MinMax)",
+                "pos_weight": "auto"
+            },
+            "config_id": "M4",
+            "selected_search": "manual_search",
+            "full_dev_mean_AP": 0.4248664366903654,
+            "full_dev_sd_AP": 0.03674683209361123,
+            "best_manual": {
+                "config_id": "M4",
+                "mean_AP": 0.4248664366903654,
+                "sd_AP": 0.03674683209361123
+            },
+            "best_random": {
+                "config_id": "R6",
+                "mean_AP": 0.41671586725771387,
+                "sd_AP": 0.035790424481047974
+            },
+            "threshold": 0.5,
+            "threshold_mode": "fixed",
+            "training_from": "B",
+            "owner": "Seda Erten"
+        },
+        "C": {
+            "method": "C",
+            "method_name": "İç CV'de seçilen karar eşiği",
+            "config": {
+                "config_id": "M5",
+                "search_type": "manual",
+                "optimizer": "AdamW",
+                "hidden_layers": [
+                    64,
+                    32
+                ],
+                "lr": 0.001,
+                "scaler": "StandardScaler",
+                "use_scheduler": true,
+                "activation": "ReLU",
+                "batch_size": 64,
+                "dropout": 0.0,
+                "weight_decay": 0.0001,
+                "clip_outliers": false,
+                "unknown_strategy": "keep_category",
+                "purpose": "Mimari etkisi ((32,) → (64,32))"
+            },
+            "config_id": "M5",
+            "selected_search": "manual_search",
+            "full_dev_mean_AP": 0.42785794090973495,
+            "full_dev_sd_AP": 0.028348385185519208,
+            "best_manual": {
+                "config_id": "M5",
+                "mean_AP": 0.42785794090973495,
+                "sd_AP": 0.028348385185519208
+            },
+            "best_random": {
+                "config_id": "R6",
+                "mean_AP": 0.4206694764992682,
+                "sd_AP": 0.027877995007946535
+            },
+            "threshold": 0.1538148820400238,
+            "threshold_mode": "inner_oof_f1",
+            "training_from": "A",
+            "owner": "İlkin Urcan"
+        },
+        "D": {
+            "method": "D",
+            "method_name": "Alternatif ön işleme",
+            "config": {
+                "config_id": "R6",
+                "search_type": "random",
+                "optimizer": "AdamW",
+                "hidden_layers": [
+                    64
+                ],
+                "activation": "tanh",
+                "lr": 0.000593,
+                "weight_decay": 0.0001,
+                "batch_size": 32,
+                "scaler": "MinMaxScaler",
+                "dropout": 0.0,
+                "use_scheduler": true,
+                "clip_outliers": true,
+                "unknown_strategy": "most_frequent",
+                "purpose": "Random Search adayı",
+                "pdays_mode": "raw"
+            },
+            "config_id": "R6",
+            "selected_search": "random_search",
+            "full_dev_mean_AP": 0.42625804879872947,
+            "full_dev_sd_AP": 0.027296440762505633,
+            "best_manual": {
+                "config_id": "M4",
+                "mean_AP": 0.42441696216613517,
+                "sd_AP": 0.022538320080200236
+            },
+            "best_random": {
+                "config_id": "R6",
+                "mean_AP": 0.42625804879872947,
+                "sd_AP": 0.027296440762505633
+            },
+            "threshold": 0.5,
+            "threshold_mode": "fixed",
+            "training_from": "D",
+            "owner": "Aslıhan Semiz Varlı"
+        }
+    },
+    "created_at": "2026-11-21 18:33:10"
+}

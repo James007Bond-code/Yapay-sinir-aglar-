@@ -1,0 +1,22 @@
+{
+    "file": "results_grup/test_predictions_locked.csv",
+    "sha256": "e9ae93e39d7f91246d2463e344570651899965d8472750f423bbdac43749b642",
+    "n_rows": 816,
+    "contains_labels": false,
+    "primary_method": "A",
+    "primary_seed": 14058,
+    "primary_column": "prob_A_seed14058",
+    "stability_seeds": [
+        14068,
+        14078
+    ],
+    "thresholds": {
+        "A": 0.5,
+        "B": 0.5,
+        "C": 0.1538148820400238,
+        "D": 0.5
+    },
+    "logreg_threshold": 0.5,
+    "created_at": "2026-11-21 18:44:01",
+    "note": "Test etiketleri okunmadan üretildi. Metrikler yalnızca bu dosyanın commit'inden sonra hesaplanır."
+}
