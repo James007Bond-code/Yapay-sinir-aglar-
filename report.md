@@ -4,6 +4,7 @@ subtitle: "Yapay Sinir Ağları – Yüksek Lisans Ara Sınav Projesi (Grup Rapo
 author:
   - "Süleyman Balsak (254312022) · Seda Erten (254312008) · İlkin Urcan (244329078) · Aslıhan Semiz Varlı (254329024)"
   - "Ders sorumlusu: Gökalp Tulum"
+  - "GitHub: https://github.com/James007Bond-code/Yapay-sinir-aglar-"
 date: "21 Kasım 2026"
 lang: tr
 ---
