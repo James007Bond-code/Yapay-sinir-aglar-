@@ -2,7 +2,8 @@
 title: "MLP ile Sınıflandırma: EDA, Ön İşleme, Hiperparametre Optimizasyonu ve Nested Cross-Validation"
 subtitle: "Yapay Sinir Ağları – Yüksek Lisans Ara Sınav Projesi (Grup Raporu)"
 author:
-  - "Süleyman Balsak (254312022) · Seda Erten (254312008) · İlkin Urcan (244329078) · Aslıhan Semiz Varlı (254329024)"
+  - "Süleyman Balsak (254312022) · Seda Erten (254312008)"
+  - "İlkin Urcan (244329078) · Aslıhan Semiz Varlı (254329024)"
   - "Ders sorumlusu: Gökalp Tulum"
   - "GitHub: https://github.com/James007Bond-code/Yapay-sinir-aglar-"
 date: "21 Kasım 2026"
